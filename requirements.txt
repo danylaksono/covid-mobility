@@ -1,0 +1,17 @@
+# Core dependencies for the UGM Mobility Data Analysis pipeline.
+# Tested with Python 3.14.0 in the project's .venv.
+# Install with:  pip install -r requirements.txt
+
+numpy==2.5.2
+pandas==3.0.5
+geopandas==1.1.4
+shapely==2.1.2
+pyarrow==25.0.1
+duckdb==1.5.5
+h3==4.5.0
+matplotlib==3.11.1
+palettable==3.3.3
+
+# Optional (interactive maps — NOT required for the pipeline/notebooks):
+# lonboard==0.16.0
+# leafmap==0.63.1

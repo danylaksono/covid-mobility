@@ -1,0 +1,32 @@
+html, body { margin: 0; height: 100%; font-family: "Segoe UI", system-ui, sans-serif; }
+
+#map { position: absolute; inset: 0; }
+
+#panel {
+  position: absolute; top: 12px; right: 12px; width: 300px; max-height: calc(100% - 24px);
+  background: rgba(255, 255, 255, 0.95); border-radius: 10px; padding: 14px 16px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25); overflow: auto; z-index: 10;
+  font-size: 13px;
+}
+#panel h1 { font-size: 15px; margin: 0 0 4px; }
+#panel .note { color: #555; margin: 0 0 10px; line-height: 1.35; }
+#panel hr { border: none; border-top: 1px solid #ddd; margin: 10px 0; }
+
+#devices .dev {
+  display: flex; align-items: center; gap: 8px; padding: 3px 0; cursor: pointer;
+}
+#devices .swatch { width: 14px; height: 14px; border-radius: 3px; flex: none; }
+#devices .dev input { margin: 0; }
+#devices .dev label { flex: 1; cursor: pointer; }
+#devices .dev .meta { color: #777; font-size: 11px; }
+
+#time-control { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+#time-control button { cursor: pointer; }
+#slider { flex: 1; }
+#clock { font-variant-numeric: tabular-nums; color: #333; min-width: 58px; text-align: right; }
+
+#fit { cursor: pointer; width: 100%; padding: 5px; }
+.foot { color: #888; font-size: 11px; margin: 10px 0 0; line-height: 1.4; }
+
+.maplibregl-popup { font-size: 12px; }
+.maplibregl-popup .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; }

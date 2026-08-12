@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+*_nbconvert_*
+
+# Data (large / derived — keep out of version control)
+data/
+*.csv
+*.parquet
+*.gzip
+*.gpkg
+
+# ...but keep the small web-viewer sample data (needed by web/ to run)
+!web/data/
+!web/data/*.geojson
+
+# Generated outputs (static maps etc.)
+outputs/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
